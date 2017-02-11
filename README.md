@@ -15,7 +15,7 @@ Project created for Essi Projects UK
 ## History
 
 ## Credits
-© Rubén Gamero
+© Rubén Gamero 2016
 ## License
 <a href="https://creativecommons.org/licenses/by/3.0/es/">Creative Commons 3.0 (CC BY 3.0 ES)</a>
 </content>
