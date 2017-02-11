@@ -1,6 +1,6 @@
 <snippet>
-  <content><![CDATA[
-# ${1:Edustance Cloud web}
+  <content>
+# Edustance Cloud web
 Project created for Essi Projects UK
 ## Installation
 
@@ -18,6 +18,5 @@ Project created for Essi Projects UK
 © Rubén Gamero
 ## License
 <a href="https://creativecommons.org/licenses/by/3.0/es/">Creative Commons 3.0 (CC BY 3.0 ES)</a>
-]]></content>
-  <tabTrigger>readme</tabTrigger>
+</content>
 </snippet>
