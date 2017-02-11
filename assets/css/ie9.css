@@ -1,0 +1,83 @@
+/*
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Header */
+
+	#header {
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4fa49a", endColorStr="#4361c2", GradientType=1);
+		position: relative;
+	}
+
+		#header:before {
+			background-image: url("images/footer.png");
+			background-repeat:repeat-y;
+			background-size: auto;
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#header > * {
+			position: relative;
+			z-index: 1;
+		}
+		
+		hr {width:20em;}
+		
+		.texto, .texto1, .bio {
+			opacity: 1 !important;
+		}
+		
+	
+/* Footer */
+
+	#footer {
+		background-image: none;
+		filter: progid:DXImageTransform.Microsoft.Gradient(startColorStr="#4361c2", endColorStr="#4fa49a", GradientType=1);
+		position: relative;
+	}
+
+		#footer:before {
+			background-image: url("images/overlay2.png"), url("images/overlay4.svg");
+			background-position: top left,							center center;
+			background-size: auto,								cover;
+			content: '';
+			height: 100%;
+			left: 0;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		#footer > * {
+			position: relative;
+			z-index: 1;
+		}
+		
+	@media screen and (max-width: 980px) {
+		#slide1, #slide2 {
+			opacity:1 !important;
+			display:inline-block !important;
+		}
+	}
+	
+	@media screen and (max-width: 736px) {
+		.content-popup {
+			width: 90% !important;
+			padding: 20px !important;
+		}
+		.content-popup hr {width:14em !important; }
+		.fotos div > div {display: block !important; }
+	}
+	
+	@media screen and (max-width: 480px) {
+		.texto, #three div img {width:100% !important; }
+		#four .image.fit img {width:100% !important; }
+	}

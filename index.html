@@ -1,0 +1,992 @@
+<!DOCTYPE HTML>
+<!--
+	Photon by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+		<title>EduStance Cloud</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Distance learning without boundaries, Openstack virtual labs, Red Hat training" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+        <style>
+			.iconos li {
+				list-style:none; 
+				display:inline-block;
+				padding: 50px 0;
+				}
+			.customers {
+				list-style:none; 
+				}
+			.customers li a {
+				display: inline-block; 
+				background-repeat: no-repeat;
+				background-position: center;
+				background-size: contain;
+				height:65px;
+				width: 70%;
+				-moz-transition: background-image 0.2s ease;
+				-webkit-transition: background-image 0.2s ease;
+				-ms-transition: background-image 0.2s ease;
+				transition: background-image 0.2s ease;
+			}
+			.biocenit {background-image:url(images/biocenit_bw.png); }
+			.biocenit:hover {background-image:url(images/biocenit.png); }
+			.cibernarium {background-image:url(images/cibernarium_bw.png); }
+			.cibernarium:hover {background-image:url(images/cibernarium.png); }
+			.onapp {background-image:url(images/onapp_bw.png); }
+			.onapp:hover {background-image:url(images/onapp.png); }
+			.main p {
+				font-size:22px;
+				line-height:1.5em;
+			}
+			#one header, #two header {
+				color: #E5E5E5;
+			}
+			#one, #five {
+				background:url(images/blur.jpg) no-repeat center;
+			}
+			.terminal {
+				color: silver;
+				padding: 0;
+				-moz-transition: all 0.2s ease, border-color 0.2s ease-in-out;
+				-webkit-transition: all 0.2s ease, border-color 0.2s ease-in-out;
+				-ms-transition: all 0.2s ease, border-color 0.2s ease-in-out;
+				transition: all 0.2s ease, border-color 0.2s ease-in-out;
+			}
+			.terminal a {display: block; padding:20px;}
+			.terminal a:hover {color: #4a87d3; }
+			.iconos a {text-decoration:none; }
+			.iconos li span {
+				font-size: 8em; 
+			}
+			
+			#two {
+				padding:4.5em 0 2em 0;
+			}
+			#three {
+				background:url(images/Si6.png) no-repeat center; 
+				padding-top:8em;
+			}
+			#four {
+				position:relative;
+				padding: 2.5em 0 6em 0;
+				background-image: url(images/seamless_paper_texture.png); 
+			}
+			#four .container {width: 90%; }
+			#four hr {margin: 1em 0 0.5em 0; }
+			#four .image.fit img {
+				width:auto;
+				max-height: 300px; 
+				padding-top: 1em;
+			}
+			#slide0 {position:relative; }
+			.scrollicon {
+				position:fixed;
+				color: #9F9F9F;
+				font-size:60px;
+				padding:0 !important;
+				bottom: 20px;
+				z-index:998;
+			}
+			.scrollicon:before {
+				background-color: rgba(194,196,194,0.50); 
+				border-radius: 40px;
+				padding:0 10px;
+				}
+			.texto1 {
+				opacity: 0;
+				color: #E5E5E5;
+			}
+			#slide1, #slide2, #caja2, .scrollicon {display: none; }
+			.barra {
+				width: 20em;
+			}
+			.texto {
+				display:inline-block;
+				opacity:0;
+				width:26em;
+				padding:30px;
+				background-color:rgba(142,142,142,0.75);
+				box-shadow: 1px 1px 10px #606060;
+				border-radius: 4px;
+				margin-bottom: 30px;
+			}
+			.texto p {
+				margin: 0 0 10px 0 ; 
+				color: #E5E5E5;
+			}
+			#three .texto {background-color: rgba(172,172,172,0.28); }
+			#four p {
+				color: #333333;
+				margin-bottom: 1em;
+			}
+			.diapos{
+				display: inline-block;
+				width: 90%;
+				margin-top:20px;
+				padding: 20px;
+			}
+			.diapos h3 {
+				font-weight:600;
+				font-size:24px;
+			}
+			.diapos p {
+				font-size: 20px;
+				margin-bottom:0;
+			}
+			.botones {
+				position:absolute; 
+				bottom:50px; 
+				left:38%; 
+			}
+			#popup {
+				left: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				z-index: 1001;
+			}
+			.content-popup {
+				text-align:center;
+				margin:0px auto;
+				margin-top:-20px;
+				position:relative;
+				padding:20px 40px;
+				width:500px;
+				border-radius:6px;
+				background-color:#FFFFFF;
+				box-shadow: 0 2px 5px #666666;
+			}			
+			.content-popup h2 {
+				font-size:2em;
+				color:#48484B;
+				margin:0;
+			}
+			.content-popup hr {margin-top:0.5em; }
+			.content-popup ul li:first-child {
+				display:inline-block;
+				width:100%;
+			}
+			form ul.actions li {padding: 0; }
+			.correo {position:relative; }
+			#result{
+				display: none;
+				position:absolute;
+				top:68px;
+				left:12px;
+				background-color: #F2F2F2;
+				border-radius: 5px;
+				box-shadow: 0 0 6px #B2B2B2;
+				padding: 10px 18px;
+				vertical-align: top;
+			}
+			#result::after {
+				content:"";
+				position:absolute;
+				bottom:49px; /* value = - border-top-width - border-bottom-width */
+				left:40%; /* controls horizontal position */
+				border-width:0 15px 15px 15px; /* vary these values to change the angle of the vertex */
+				border-style:solid;
+				border-color:#F2F2F2 transparent;
+				/* reduce the damage in FF3.0 */
+				width:0;
+				border-width: 0 15px 12px;
+				display: block;
+				top: -15px;
+				z-index:1005;
+			}
+						
+			input[type="submit"].special {
+				margin: 10px 0 5px 0;
+				padding:0 3.5em;
+			}
+			.formbutton {
+				position:absolute;
+				bottom:8px;
+				padding:0;
+				margin:0;
+				box-shadow:none;
+			}
+			.formbutton i {
+				font-size:27px;
+				color:#CCCCCC;
+				-moz-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: color 0.2s ease-in-out, color 0.2s ease-in-out;
+			}
+			.formbutton.left {
+				left:40px;
+			}
+			.formbutton.right{
+				right:40px;
+			}
+			.formbutton.right i {
+				font-size:33px;
+			}
+			.formbutton:hover {
+				background-color:transparent;
+			}
+			.formbutton i:hover {
+				color:#7C7C7C;
+			}
+			.formbutton:focus {
+				border:none !important;
+				outline:none !important;
+			}
+			.popup-overlay {
+				left: 0;
+				position: fixed;
+				top: 0;
+				width: 100%;
+				height:100%;
+				z-index: 999;
+				display:none;
+				background-color: #A3A3A3;
+				opacity: 0.7;
+			}			
+			#six {padding: 5em 0 0 0; }
+			#six .row {
+				max-height:550px;
+				overflow:hidden;
+			}
+			.fotos {position:relative; }
+			.fotos img {
+				width:100%;
+				vertical-align:bottom;
+			}
+			.bio {
+				position: absolute;
+				top: 0px;
+				width: 50%;
+				opacity: 0;
+				height:100%;
+				padding: 80px 100px;
+				color: #333333;
+				background-color:#F9F9F9;
+			}
+			.bio h3 {font-size:36px; }
+			.bio h4 {font-size: 28px; }
+			.bio p {
+				font-size:20px; 
+				margin-bottom: 0;
+			}
+			#footer div:first-child {margin-bottom: 1em;}
+			#footer h3 {
+				font-size:1.5em;				
+				line-height: 1;
+			}
+			#footer h4 {font-size:1em; }
+			#footer h4 span {font-weight:500; }
+			
+			@-webkit-keyframes bioflow {
+			  0%  {
+				opacity: 0;
+			  }
+			
+			  100% {
+				opacity: 1;
+			  }
+			}
+			
+			@keyframes bioflow {
+			  0%  {
+				opacity: 0;
+			  }
+			
+			  100% {
+				opacity: 1;
+			  }
+			}
+			
+			.bioflow {
+			  visibility:visible;
+			  -webkit-animation-name: bioflow;
+			  animation-name: bioflow;
+			  -webkit-animation-duration: 1s;
+			  animation-duration: 1s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			}
+			@-webkit-keyframes flash {
+			  0%  {
+				opacity: 0;
+			  }
+			
+			  100% {
+				opacity: 1;
+			  }
+			}
+			
+			@keyframes flash {
+			  0%  {
+				opacity: 0;
+			  }
+			
+			  100% {
+				opacity: 1;
+			  }
+			}
+			
+			.flash {
+			  visibility:visible;
+			  -webkit-animation-name: flash;
+			  animation-name: flash;
+			  -webkit-animation-duration: 0.5s;
+			  animation-duration: 0.5s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			}
+			@-webkit-keyframes flush {
+			  0%  {
+				opacity: 1;
+			  }
+			
+			  100% {
+				opacity: 0;
+			  }
+			}
+			@keyframes flush {
+			  0%  {
+				opacity: 1;
+			  }
+			
+			  100% {
+				opacity: 0;
+			  }
+			}
+			
+			.flush {
+			  visibility:visible;
+			  -webkit-animation-name: flush;
+			  animation-name: flush;
+			  -webkit-animation-duration: 0.3s;
+			  animation-duration: 0.3s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			}
+			
+			@-webkit-keyframes hands {
+			  0%  {
+				opacity: 0;
+			  }
+			  100% {
+				opacity: 1;
+			  }
+			}
+			
+			@keyframes hands {
+			  0%  {
+				opacity: 0;
+			  }
+			  100% {
+				opacity: 1;
+			  }
+			}
+			.hands {
+			  -webkit-animation-name: hands;
+			  animation-name: hands;
+			  -webkit-animation-duration: 0.5s;
+			  animation-duration: 0.5s;
+			  -webkit-animation-delay: 0.5s;
+    		  animation-delay: 0.5s;
+			  -webkit-animation-fill-mode: both;
+			  animation-fill-mode: both;
+			}
+			
+			@media screen and (max-width: 1140px){
+				#three {padding-top:4em;}
+				.botones {
+					bottom:30px;
+					left: 36%;
+				}
+				.diapos {width:100%; }
+				#caja {position:absolute; left:0px; }
+				#caja2 {position:absolute; left: 125px; }
+				#result {
+					top:62px;
+				}
+				#result::after {
+					top: -11px;
+				}
+				.bio {padding: 4em 2.5em;}
+				.bio h3 {margin-bottom: 0.5em; }
+			}
+			@media screen and (max-width: 980px) {
+				.iconos li span {
+					font-size: 9em; 
+				}
+				.iconos h2 {font-size:32px; }
+				#three div img {width:80%; }
+				.texto {width: 80%; }
+				#four .image.fit {margin: 0; }
+				#four header+p {
+					font-size:20px;
+					padding: 0 15px; 
+					margin-bottom: 2em; 
+				}
+				.diapos {margin-top:0; }
+				.button.special {margin-top: 10px; }
+				.botones {position:relative !important; left:0px; top:30px; }
+				#slide1, #slide2 {
+					display:inline-block !important; 
+					opacity: 0; 
+				}
+				#caja {display: none !important; }
+				#caja2 {display: inline-block !important; position:inherit; margin-left: 0;}
+				.bio {padding: 2.5em 2em;}
+				.bio h3 {
+					font-size: 32px;
+				}
+				.bio h4 {
+					font-size: 24px;
+				}
+				.bio p {font-size:18px; }
+			
+			@media screen and (max-width: 736px) {
+				.iconos li span {
+					font-size: 11em; 
+				}
+				.iconos li {padding: 120px 0 30px 0}
+				#one {
+					padding: 0;
+					height:800px;
+				}
+				.terminal {width:100%; height:100%; }
+				.terminal:hover {
+					background-color: transparent;
+					box-shadow:none;
+				}
+				.terminal a:hover {color: inherit; }
+				.coloricon {color: #4a87d3 !important; }
+				.scrollicon {
+					display:inline-block !important; 
+					opacity: 0;
+					left: 47%;
+				}
+				.content-popup {width: 90%;}
+				.content-popup hr {width:16em; }
+				#result {
+					top:58px;
+				}
+				#three div img {width:100%; }
+				#four {padding-bottom: 3.5em; }
+				.customers li a {width: 40%; margin-bottom: 1em; }
+				.bio {
+					position:relative;
+					top: auto;
+					width: 100%;
+				}
+				#six .row { 
+					overflow:visible;
+					height:auto;
+					max-height:none;
+				}
+			}
+			@media screen and (max-width: 480px) {
+				.barra {
+					width: 16em;
+				}
+				.texto {
+					width: 100%;
+					margin-bottom: 3em;
+				} 
+				.texto p {
+					 font-size: 20px; 	 
+				}
+				#two header {padding: 0 10px;}
+				#three div p {font-size: 20px;}
+				#four {padding-bottom: 2.5em; }
+				#four .image.fit img {width:100%;}
+				.scrollicon {left: 43%; }
+				.content-popup {padding: 20px;}
+				.content-popup h2 {font-size: 1.6em;}
+				.content-popup hr {width:14em; margin: 0.25em 0 1.25em 0; }
+				#result {
+					top:48px;
+					left:8px;
+					padding: 5px 15px;
+				}
+				textarea {
+					padding: 0.3em 1em;
+				}
+				input[type="text"],
+				input[type="password"],
+				input[type="email"],
+				select {
+					height: 2em;
+				}
+				form ul.actions li button {width:auto; }
+				.formbutton {bottom: 0px; }
+				.formbutton i {
+					font-size: 18px; 
+					color: #969696;
+				}
+				.formbutton.left {left: 35px; }
+				.formbutton.right {right: 35px; }
+				.formbutton.right i {font-size: 21px;}
+				input[type="submit"].special {
+					height:2.5em;
+					line-height: 2.5em;
+					background-color: #969696;
+					color: #fff !important;
+				}
+				.content-popup ul li:first-child {margin: 8px 0 25px 0;}
+				.customers li a {width: 60%; margin-bottom: 0; }
+				.biocenit {background-image:url(images/biocenit.png); }
+				.cibernarium {background-image:url(images/cibernarium.png); }
+				.onapp {background-image:url(images/onapp.png); }
+			}
+		</style>
+        
+       
+	</head>
+	<body>
+
+		<!-- Header -->
+			<section id="header">
+				<div class="inner">
+					<span class="icon major fa-cloud"></span>
+					<h1>Hi, we are  <strong>eduStance Cloud</strong>, we will be <br>
+					online soon...<a href="https://engine.edustance-cloud.com/">eduStance Cloud</a>.</h1>
+					<p>eduStance | Learning without boundaries.</p>
+					<ul class="actions">
+						<li><a href="#one" class="button scrolly">Discover</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- One -->
+			<section id="one" class="main style1 special">
+					<div class="container">
+                             <ul class="iconos">
+                                <div class="row">
+                                	<div class="6u 12u$(small) terminal">
+                                    <a href="#two" class="scrolly">
+                                    	<li><span class="icon fa-terminal"></span></li>
+                                        <h2 class="major">Hands-on traning environment</h2>
+                                    </a>
+                                    </div>
+                                    <div class="6u 12u$(small) terminal">
+                                    <a href="#three" class="scrolly">
+                                    	<li><span class="icon fa-globe"></span></li>
+                                        <h2 class="major">From anywhere</h2>
+                                    </a>
+                                    </div>
+                                </div>
+                             </ul>
+                            
+					</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="main style2" data-vide-bg="video/hands-on" data-vide-options="posterType: jpg">
+				<div class="container">
+					<div class="row 150%">
+						<div class="12u$">
+                        	<div class="6u 12u$(medium)">
+                                <header class="major">
+                                    <h2>Hands-on traning environment</h2>
+                                    <hr class="major">
+                                </header>
+                                <div class="texto">
+                                <p>While using <strong>EduStance Cloud</strong> you will experience a fully-featured hands-on virtual training environment. You will be provided with your own learning environment to run your lab, where you will be able to develop your skills with our instructors, remote labs and a powerful user interface.</p>
+                                <p>Our aim is to provide you all the necessary tools to achieve your goals and succeed.</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+				</div>
+			</section>
+            
+        <!-- Three -->
+			<section id="three" class="main style2 special">
+				<div class="container">
+                	<div class="row 100%">
+                        <div class="6u 12u$(medium)">
+                            <header class="major">
+                                <h2>From anywhere</h2>
+                                <hr class="major">
+                            </header>
+                            <div class="texto1">
+                            <p>Enable anyone to train on your solution from anywhere with just a browser and an internet connection, coupled with high quality training courseware.</p>
+                            </div>  
+                        </div>
+                        <div class="6u 12u$(medium)">
+                            <span class="image fit"><img src="images/2.png" /></span>
+                        </div>
+                    </div>
+                    <ul class="actions uniform">
+                    	<li><a href="#four" class="button special scrolly">Learn More</a></li>
+                    </ul>
+				</div>
+			</section>
+
+		<!-- Four -->
+	<section id="four" class="main style1 special">
+		<div class="container">
+			<header class="major">
+				<h2>How does it work?</h2>
+				<hr>
+			</header>
+			<p>What kind of training do you need?<br/>We provide you a keys-in-hand solution which integrates the full process of a training.</p>
+			<div class="12u$">
+				<div class="row 150%">
+					<div id="slide0" class="12u$">
+						<div class="row 0%">
+							<div class="6u 12u$(medium)">
+								<span class="image fit"><img src="images/cloud.png" alt="Training as a service" /></span>
+							</div>
+							<div class="6u 12u$(medium)">
+                                <div class="diapos">
+                                    <h3>Training as a service</h3>
+                                    <p>Edustance enables any business to provide bespoke training on their products to either customers or internal staff, without the need of an in house training team or a hardware infrastructure. You don't have to worry any longer about the maintenance of your solution.</p>
+                                </div>
+                            </div>
+						</div>
+					</div>
+					<div id="slide1" class="12u$">
+						<div class="row 0%">
+							<div class="6u 12u$(medium)">
+								<span class="image fit"><img src="images/gears.png" alt="Training as a service" /></span>
+							</div>
+							<div class="6u 12u$(medium)">
+                                <div class="diapos">
+                                    <h3>Fitted solution for everybody</h3>
+                                    <p>You let us know what your training needs are, like training courseware, remote labs, or an isolated environment composed of virtual machines. We will give you a solution strictly tailored to your needs.</p>
+                                </div>
+							</div>
+						</div>
+					</div>
+                    <span class="scrollicon fa fa-angle-double-down"></span>
+					<div id="slide2" class="12u$">
+                    <div class="row 0%">
+                    	<div class="6u 12u$(medium)">
+							<span class="image fit"><img src="images/pencil.png" alt="Custom your courseware" /></span>
+                        </div>
+                        <div class="6u 12u$(medium)">
+                            <div class="diapos">
+                                <h3>Custom your courseware</h3>
+                                <p>Give your team all the infrastructure and materials they need to train on your solutions or allow external users (customers, partners) to do the same and certify on your solution. Also our team of experts will work closely with your technical team to create the materials.</p>
+                            </div>
+                        </div>
+                    </div>
+					</div>
+				</div>
+                <ul class="actions botones">
+						<li><a id="caja" class="button">More</a></li>
+                        <li><a id="caja2" class="button">What's next?</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+    
+    <!-- Pop-up -->
+      
+    <div id="popup" style="display: none;">
+    <div class="content-popup">
+        <div>
+           <h2>Tell us about you</h2>
+           <hr>
+           		<form method="post" action="#">
+					<div class="row uniform 25%">
+						<div class="6u 12u$(xsmall)">
+							<input type="text" name="first-name" id="first-name" value="" placeholder="First name" />
+						</div>
+                        <div class="6u 12u$(xsmall)">
+							<input type="text" name="last-name" id="last-name" value="" placeholder="Last name" />
+						</div>
+						<div class="6u 12u$(xsmall) correo">
+							<input type="email" name="email" id="email" value="" placeholder="Email" />
+                        <div id="result">Enter a valid email</div>   
+						</div>
+                        <div class="6u 12u$(xsmall)">
+							<input type="text" name="company" id="company" value="" placeholder="Company" />
+						</div>
+                        <div class="12u$">
+                            <textarea name="message" id="message" placeholder="Enter your message" rows="4"></textarea>
+                        </div>
+                        <div class="12u$">
+                            <ul class="actions">
+                                <li><input type="submit" value="Send Message" class="special" /></li>
+                                <li><button type="reset" value="Reset" class="formbutton left"><i class="fa fa-repeat"></i></button></li>
+                                <li><button id="close" class="formbutton right"><i class="fa fa-times"></i></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
+<div class="popup-overlay"></div>
+
+
+	<!-- Five -->
+        
+    <section id="five" class="main style1 special">
+    	<div class="container">
+        	<header class="major">
+				<h2>Our customers</h2>
+				<hr>
+			</header>
+            <div class="12$">
+                <ul class="customers">
+                    <div class="row 100%">
+                    	<li class="4u 12u(small)"><a class="biocenit" href="http://www.biocenit.cat/" target="_blank">
+                  </a></li>
+                    	<li class="4u 12u(small)"><a class="cibernarium" href="http://w144.bcn.cat/cibernarium/cat/index.do" target="_blank">
+                  </a></li>
+                        <li class="4u 12u(small)"><a class="onapp" href="http://onapp.com/" target="_blank">
+                  </a></li>
+                     </div>
+                 </ul> 
+            </div>
+        </div>
+    </section>
+    
+    <!-- Six -->
+        
+    <section id="six" class="main style1 special">
+    	<div class="container 125%">
+        	<header class="major">
+				<h2>Our staff</h2>
+				<hr>
+			</header>
+                <article class="fotos">
+                	<div class="row 0%">                  
+                        <div class="6u 12u(small)">
+                        	<img src="images/kc.jpg" />
+                        </div>
+                        <div class="6u 12u(small)">
+                        	<div class="bio">
+                                <h3>Jesús Bustos</h3>
+                                <h4>EduStance Cloud director</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a leo lorem. Mauris varius nulla hendrerit, pulvinar nisi dapibus, mollis dolor. In ac velit sit amet turpis consequat blandit convallis id dui. Donec posuere dapibus lorem non fermentum.</p>
+                            </div>
+                        </div>
+                    </div>
+               	</article>
+                <article class="fotos">
+                	<div class="row 0%">
+                 		<div class="6u -6u 12u(small)">
+                        	<img src="images/kc.jpg" />
+                        </div>
+                        <div class="6u 12u(small)">
+                        	<div class="bio">
+                                <h3>Jesús Bustos</h3>
+                                <h4>EduStance Cloud director</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a leo lorem. Mauris varius nulla hendrerit, pulvinar nisi dapibus, mollis dolor. In ac velit sit amet turpis consequat blandit convallis id dui. Donec posuere dapibus lorem non fermentum.</p>
+                            </div>
+                        </div>
+                	</div>
+                </article>
+        </div>
+    </section>
+		
+		<!-- Footer -->
+    <section id="footer">
+        <div class="container">
+                <div class="row">
+                    <div class="6u -3u 12u(small)">
+                        <h3>Get in touch</h3>
+                        <ul class="icons">
+                            <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+                            <li><a href="#" class="icon alt fa-youtube-play"><span class="label">You Tube</span></a></li>
+                            <li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="row">
+                    <div class="4u 12u(small)">
+                        <h4><span>Edustance Cloud</span> is created by</h4>
+                        <img src="images/logoessi.png" />
+                    </div>
+                </div>
+            <ul class="copyright">
+                    <li>© Essi Projects Ltd</li><li>Design: <a href="http://www.essiprojects.co.uk">Essi Projects</a></li>
+                </ul>
+        </div>
+    </section>
+
+		<!-- Scripts -->
+        
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.scrolly.min.js"></script>
+<script type="text/javascript" src="assets/js/skel.min.js"></script>
+<script type="text/javascript" src="assets/js/util.js"></script>
+<script type="text/javascript" src="assets/js/jquery.vide.js"></script>
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script type="text/javascript" src="assets/js/main.js"></script>
+<script>
+	$(document).ready(function() {
+				
+		$('.terminal').waypoint(function(direction) {
+			if (direction === 'down') {
+				$(this).find('a').addClass('coloricon');
+				}
+				}, {
+					offset: '50%'
+				}).waypoint(function(direction) {
+			if (direction === 'up') {
+				$(this).find('a').removeClass('coloricon');
+				}
+				}, {
+					offset: '15%'
+				});
+		$('hr').waypoint(function() {
+			$(this).toggleClass( 'barra' );
+		},
+		{
+			offset: '60%',
+			triggerOnce: true
+		});
+		$('.texto').waypoint(function() {
+			$(this).toggleClass( 'hands' );
+		},
+		{
+			offset: '60%',
+			triggerOnce: true
+		});
+		$('.texto1').waypoint(function() {
+			$(this).toggleClass( 'hands' );
+		},
+		{
+			offset: '60%',
+			triggerOnce: true
+		});
+		
+		$('#slide1').waypoint(function(direction) {
+			if (direction === 'down') {
+				$('#four').find('.scrollicon').toggleClass('flash');
+				$('#four').find('.scrollicon').removeClass('flush');
+				}
+				}, {
+				  offset: '100%'
+			}).waypoint(function(direction) {
+			if (direction === 'up') {
+				$('#four').find('.scrollicon').removeClass('flash');
+				$('#four').find('.scrollicon').addClass('flush');
+				}
+				}, {
+				  offset: '100%'
+			});
+
+		$('#slide1').waypoint(function() {
+			$(this).toggleClass( 'flash' );
+		},
+		{
+			offset: '50%',
+			triggerOnce: true
+		});
+		$('#slide2').waypoint(function() {
+			$(this).toggleClass( 'flash' );
+		},
+		{
+			offset: '50%',
+			triggerOnce: true
+		}).waypoint(function(direction) {
+			if (direction === 'up') {
+				$('#four').find('.scrollicon').removeClass('flash');
+				$('#four').find('.scrollicon').addClass('flush');
+		}
+		},{
+				  offset: '0%'
+			});
+		$('#five').waypoint(function() {
+			$('#four').find('.scrollicon').removeClass('flash');
+			$('#four').find('.scrollicon').addClass('flush');
+		},{
+			offset: 950
+		});
+		
+		$('.bio').waypoint(function() {
+			$(this).toggleClass( 'bioflow' );
+		},
+		{
+			offset: '60%',
+			triggerOnce: true
+		});
+		$('#caja2').click(function(){
+			if ($(window).height() < 500) {
+			   $('textarea').attr('rows', '3');
+			}
+			$('#popup').fadeIn('fast');
+			$('.content-popup').animate({'margin-top': '30px'}, 400);
+			$('.popup-overlay').fadeIn('fast');
+			return false;
+		});		
+		$('#close').click(function(){
+			$('#popup').fadeOut('fast');
+			$('.content-popup').animate({'margin-top': '-20px'}, 400);
+			$('.popup-overlay').fadeOut('fast');
+			$("#result").css('display', 'none');
+			return false;
+		});
+		$('.popup-overlay').click(function(){
+			$('#popup').fadeOut('fast');
+			$('.content-popup').animate({'margin-top': '-20px'}, 400);
+			$('.popup-overlay').fadeOut('fast');
+			$("#result").css('display', 'none');
+			return false;
+		});
+		
+		
+		var i = 0;
+		$('#caja').click(function(){
+			$('#slide'+i).css({display: 'none'});
+			if(i==2){i=-1};
+			i++;
+			$('#slide'+i).fadeIn('slow').css({display: 'inline-block'});
+		if(i==2){
+			$('#caja2').fadeIn('slow').css({display: 'block'});
+			var more=document.getElementById('caja');
+			more.innerHTML='Back';
+			};
+		if(i==0){
+			$('#caja2').fadeOut('slow');
+			var more=document.getElementById('caja');
+			more.innerHTML='More';
+			};
+		});
+		
+		
+			
+	});	
+</script>
+<script>
+function validateEmail(email) { 
+  
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+}
+
+function validate(){
+  $("#result").css('display', 'none');
+  var email = $("#email").val();
+  if (validateEmail(email)) {
+    $("#result").css('display', 'none');
+  } else {
+    $("#result").css({'display': 'block', 'color': 'red'});
+  }
+  return false;
+}
+
+function clear() {
+	$("#result").css('display', 'none');
+}
+
+$("#email").on("focusout", validate);
+$("form").bind("reset", clear);
+</script>
+            
+
+	</body>
+</html>
