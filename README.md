@@ -1,7 +1,7 @@
 <snippet>
   <content>
 # Edustance Cloud web
-Project created for Essi Projects UK
+Project created for Essi Projects UK.
 ## Installation
 
 ## Usage
@@ -12,6 +12,7 @@ Project created for Essi Projects UK
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
+
 ## History
 
 ## Credits
