@@ -1,7 +1,7 @@
 <snippet>
   <content>
 # Edustance Cloud web
-Project created for Essi Projects UK.
+Project created for Essi Projects UK bases on <a href="https://github.com/html5up/photon">Photon by HTML5 UP</a>
 ## Installation
 
 ## Usage
@@ -17,6 +17,7 @@ Project created for Essi Projects UK.
 
 ## Credits
 © Rubén Gamero 2016
+html5up.net | @n33co
 ## License
 <a href="https://creativecommons.org/licenses/by/3.0/es/">Creative Commons 3.0 (CC BY 3.0 ES)</a>
 </content>
